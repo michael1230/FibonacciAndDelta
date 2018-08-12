@@ -18,7 +18,7 @@ import java.awt.Font;
 
 public class Work4 {
 
-	private JFrame frame;
+	private JFrame frmMichaelUniversalCode;
 	private JTextField txtEncoderdecoder;
 	private JTextField txtByMichaelBabaive;
 	private JTextField txtEncodedMenu;
@@ -43,7 +43,7 @@ public class Work4 {
 			public void run() {
 				try {
 					Work4 window = new Work4();
-					window.frame.setVisible(true);
+					window.frmMichaelUniversalCode.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -64,17 +64,17 @@ public class Work4 {
 	private void initialize() {
 		fileToEncodeChooser	= new JFileChooser(new File(System.getProperty("user.dir")));//////////////
 		fileToDecodeChooser= new JFileChooser(new File(System.getProperty("user.dir")));///////////////
-		frame = new JFrame();
-		frame.setBounds(100, 100, 733, 435);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(new CardLayout(0, 0));
-		frame.setTitle("MIchael and Alex Universal Code Encoding/Decodong");
+		frmMichaelUniversalCode = new JFrame();
+		frmMichaelUniversalCode.setBounds(100, 100, 733, 435);
+		frmMichaelUniversalCode.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmMichaelUniversalCode.getContentPane().setLayout(new CardLayout(0, 0));
+		frmMichaelUniversalCode.setTitle("MIchael Universal Code Encoding/Decodong");
 		
 		start = new JPanel();
 		encodMenu = new JPanel();
 		decodMenu = new JPanel();
 		decodMenu.setBackground(Color.GRAY);
-		frame.getContentPane().add(start, "name_5743502822073");
+		frmMichaelUniversalCode.getContentPane().add(start, "name_5743502822073");
 		start.setLayout(null);
 		
 		txtEncoderdecoder = new JTextField();
@@ -193,7 +193,7 @@ public class Work4 {
 		
 		
 		
-		frame.getContentPane().add(encodMenu, "name_5747107751268");
+		frmMichaelUniversalCode.getContentPane().add(encodMenu, "name_5747107751268");
 		encodMenu.setLayout(null);
 		
 		txtEncodedMenu = new JTextField();
@@ -267,7 +267,7 @@ public class Work4 {
 		DelSpaceSaved.setBounds(489, 228, 186, 16);
 		encodMenu.add(DelSpaceSaved);
 		
-		frame.getContentPane().add(decodMenu, "name_5752454053476");
+		frmMichaelUniversalCode.getContentPane().add(decodMenu, "name_5752454053476");
 		decodMenu.setLayout(null);
 		
 		encodingType.setBounds(45, 81, 422, 25);
